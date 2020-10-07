@@ -31,10 +31,11 @@ body{
 .logo img{
     width:20%;
 }
+
  .nav{
     position: absolute;
      
-   right: -70px;*
+   right: -70px;
         
      
     
@@ -42,10 +43,12 @@ body{
    /* background-color: green*/
     list-style-type:none;
      display: inline;
-     width: 60%
-     
+     width: 60%;
+    
     
 }
+
+
 .nav>li>a{
     display: block
 }
@@ -94,6 +97,7 @@ body{
     
    
 }
+
 .dropdown{
     position:relative;
    /* display: inline-block*/
@@ -158,11 +162,28 @@ body{
    text-align: center;
         padding-top:50px
 }
-.home{
+#home{
  height:100vh;
         background-image: url(../images/background1.webp);
     background-size: cover;
     position:relative;
+}
+@media screen and (max-width:400px) {
+    .nav{
+      padding: 6px;
+        right:-10px;  
+    } 
+  
+.logo{
+     width: 50%;
+  
+}  
+    .logo img{
+        width:40%;
+    } 
+    .nav >li >a {
+    padding:10px 10px;
+    }
 }
 .overlay{
     position:absolute;
@@ -253,7 +274,38 @@ button{
 .about-itemtitle{
     text-transform: capitalize;
     margin-bottom: 10px;
+  /* font-size: 5vw*/
+}
+
+@media screen and (max-width:786px) {
+    .about-item{
+        width:60%;
+        margin-left: 100   
+    } 
    
+.about-item.mg{
+   margin:5% 100px 
+}
+ 
+
+
+
+
+ @media screen and (max-width:400px) {
+    .about-item{
+        width:94%;
+        margin: 0   
+
+    } 
+   .about-item.mg{
+   margin:5% 0
+}
+}
+
+    .nav{
+        width:50%
+    }
+ 
 }
 
 .aboutitem-desc{
@@ -300,7 +352,7 @@ color:#fff;
     
 }
 /*portofilo section*/
-.portofilo{
+#portofilo{
   background:#f9f9f9;
      
 }
@@ -406,8 +458,30 @@ color:#fff;
   /*  visibility: visible;*/
     opacity: 1
 }
+@media screen and (max-width:768px){
+ 
+.portofilo-item{  
+    width: 60%;
+    margin:30px 0 30px 100px
+
+    }
+  .portofilo-item.mg{
+    margin:30px 0 30px 100px 
+}  
+}
+@media screen and (max-width:400px){
+ 
+.portofilo-item{  
+    width: 90%;
+    margin:30px 0 
+
+    }
+  .portofilo-item.mg{
+    margin:30px 0 
+}    
+}
 /*offer section*/
-.offer{
+#offer{
     padding-bottom: 120px
 }
 .offer-content{
@@ -422,9 +496,12 @@ color:#fff;
     position: relative;
     
 }
+
 .offer-item.mg{
-    margin:0 5%;
+    margin:0 5 20 5;
 }
+
+
 .offer-item .icon
 {
     position: absolute;
@@ -469,9 +546,33 @@ color:#fff;
     color:#fff;
     
 }
+@media screen and (max-width:786px) {
+    .offer-item {
+        width:60%;
+      
+
+ margin:5%  0 5% 100;
+    }
+.offer-item.mg{
+    margin:5% 0 5% 100;
+}
+
+}
+@media screen and (max-width:400px) {
+    .offer-item {
+        width:94%;
+        
+ margin:5% 0;
+    }
+.offer-item.mg{
+    margin:5% 0;
+}
+
+}
 /*service*/
-.service{
-    padding-bottom: 120px
+#services{
+    padding-bottom: 120px;
+      background-color: #f9f9f9;    
 }
 
 .service-item { 
@@ -485,10 +586,7 @@ color:#fff;
 .service-item .section-header{
   text-align: left;
 }
-.service{
-    background-color: #f9f9f9;
-    padding: 120px o
-}
+
 .service-item .section-header .line{
     margin:0 0 50 0
 }
@@ -537,7 +635,8 @@ color:#fff;
 }
 /*numbers section*/
 .numbers{
-     padding-bottom:120px;
+    margin-top: 120px;
+     padding-bottom:120px ;
     position: relative;
     background-image: url(../images/background2.webp);
    background-size: cover;
@@ -570,6 +669,12 @@ float: left;
 }
 .number-item-text{
     color: #fff; 
+}
+@media screen and (max-width:400px) {
+   .number-item-text{
+       word-spacing: 30px
+    }
+ 
 }
 /*priciping section*/
 .priciping{
@@ -664,6 +769,29 @@ width: 130px;
 .priciping-item:hover .priciping-item-text{
     color: #6195ff
 }
+@media screen and (max-width:768px) {
+    .priciping-item{
+        width:60%;
+        margin-left: 100px
+    }
+    
+.priciping-item.mg{
+    margin: 5% 0 5% 100
+}
+
+}
+@media screen and (max-width:400px) {
+    .priciping-item{
+        width:94%;
+         margin-left: 0px
+
+    }
+    
+.priciping-item.mg{
+    margin: 5% 0
+}
+
+}
 /*testimonual section*/
 .testimonual{
    position: relative;
@@ -673,14 +801,6 @@ width: 130px;
     height: 400;
     padding-bottom: 120px
 }
-.testimonual-item{
-    float: left;
-    width: 50%;
-    color:#fff;
-  padding: 0 40 0 0;
- 
-}
-
 .testimonual-content{
     overflow: hidden;
     
@@ -691,6 +811,16 @@ width: 60%;
 
     
 }
+
+.testimonual-item{
+    float: left;
+    width: 50%;
+    color:#fff;
+  padding: 0 40 0 0;
+ 
+}
+
+
 
 .testimonual-toplayer{
     padding:10 2 40 100;
@@ -713,12 +843,30 @@ width: 60%;
     line-height: 30px;
         font-size: 17px
 }
-.team-content{
-    /*overflow: hidden;*/
-    float: left
+@media screen and (max-width:768px) {
+    .testimonual-desc{
+    line-height: 20px;
+   font-size: 10px
+} 
+}
+@media screen and (max-width:400px) {
+ .testimonual-content{
+   
+
+width: 100%;
+     
+}
+ .testimonual-toplayer h3{
+    font-size: 15px
+}
+.testimonual-desc{
+    line-height: 20px;
+   font-size: 10px
+}    
+  
 }
 /*team section*/
-.team{
+#team{
     margin-bottom: 120px
 }
 .team-item{
@@ -807,7 +955,7 @@ width: 60%;
 
 }
 /*blog*/
-.blog{
+#blog{
     padding-bottom: 120;
     background-color: #f8f8f8
 }
@@ -852,6 +1000,218 @@ width: 60%;
     color:#6195ff;
     padding: 20;
 }
+@media screen and (max-width:400px) {
+   .blog-link{
+   
+    padding: 0;
+}
+/*.blog-item.mg{
+    margin:0 20px
+}  */
+  .blog-title{
+    
+        font-size: 10px
+}  
+}
+/*touch*/
+.touch{
+    padding-bottom: 120px;
+}
+.container.mg{
+    width:60% 
+}
+.touch-content{
+    overflow: hidden;
+    margin-bottom: 60px
+}
+.touch-item{
+    float: left;
+    width: 20%;
+    
+        
+    
+}
+.touch-item.mg{
+    margin: 0 20%
+}
+
+
+.touch-content i{ 
+ color:#6195ff;
+    margin-bottom: 15px;
+    margin-left: 40px
+    
+}
+#light{
+    
+     margin-left: 60px
+    
+
+}
+
+.touch-title{
+  margin-bottom: 15px ;
+   margin-left: 25px
+    
+}
+.touch-desc{
+  color: #8999; 
+    font-size: 18px ;
+   /* margin-right: 50px*/
+}
+
+/*.touch-content-box{
+    width:60%
+}*/
+
+.touch-content-box{
+   margin-left:100px
+}
+
+.name{
+  width: 40%;
+    height: 40px;
+
+    background-color: #f8f8f8;
+    float: left;
+    line-height: 40px;
+ padding-left: 10px;
+    color:#8999
+}
+
+
+.email{
+    width: 40%;
+    height: 40px ;
+     background-color: #f8f8f8  ;  
+    float: left;
+    margin :0 25px;
+    line-height: 40px;
+    padding-left: 10px;
+    color:#8999
+}
+.subject{
+     width: 83%;
+    height: 40px;
+  background-color: #f8f8f8;
+  line-height: 40px;
+ padding-left: 10px;
+color:#8999
+}
+.message{
+     width: 83%;
+    height: 80px;
+  background-color: #f8f8f8;
+     line-height: 40px;
+  padding-left: 10px;
+color:#8999
+
+}
+.touch-btn{
+    background-color: #6195ff;
+    color:#eee;
+        padding:15px 25px;
+    margin:30 250;
+    font-size: 20px;
+    border-radius:3px;
+   border:0px         
+}
+.touch-content i{ 
+ color:#6195ff;
+    margin-bottom: 15px;
+    margin-left: 40px
+    
+}
+.touch-btn:hover{
+    opacity:0.8
+}
+
+@media screen and (max-width:768px) {
+    
+.touch-content i{ 
+    margin-left: 0px
+}
+ .touch-title{ 
+     margin-left: 0px;
+     font-size:18px
+    }
+    .touch-desc{
+        font-size: 12px
+    }
+    #light{ 
+        margin-left: 0px
+    } 
+   .touch-content-box{
+   margin-left:0px;       
+
+   /* width:90%*/
+    }
+    .container.mg{
+    width:94% 
+}
+ 
+
+    .touch-btn{
+    padding:15px 10px; 
+ margin:30 230;   
+    } 
+   
+.subject{
+     width: 90%;
+    }
+  
+.email{
+    width: 47%;  
+    }
+  .message{
+     width: 90%;  
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    
+.touch-content i{ 
+    margin-left: 0px
+}
+ .touch-title{ 
+     margin-left: 0px;
+     font-size:18px
+    }
+    .touch-desc{
+        font-size: 12px
+    }
+    #light{ 
+        margin-left: 0px
+    } 
+   .touch-content-box{
+   margin-left:0px;       
+
+   /* width:90%*/
+    }
+    .container.mg{
+    width:94% 
+}
+ 
+
+    .touch-btn{
+    padding:15px 10px; 
+ margin:30 100;   
+    } 
+   
+.subject{
+     width: 90%;
+    }
+  
+.email{
+    width: 43%;  
+    }
+  .message{
+     width: 90%;  
+    }
+}
+
+
 /*fouter*/
 .fouter{
     
@@ -885,4 +1245,13 @@ width: 60%;
     color:#999;
     font-size: 15px;
     text-transform: uppercase
+}
+@media screen and (max-width:400px){
+  .fouter-list li a{ 
+      width: 40px;
+       margin: 0 3px
+        
+
+    }
+    
 }
