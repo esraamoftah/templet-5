@@ -440,7 +440,7 @@ color:#fff;
 
     
     top:10;
-      transition: top 0.5s,opacity 0.5s;
+     transition: top 0.5s,opacity 0.5s;
  transition-delay: 0.5s
 
 }
