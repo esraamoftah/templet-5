@@ -168,14 +168,18 @@ body{
     background-size: cover;
     position:relative;
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:746px) {
     .nav{
-      padding: 6px;
-        right:-10px;  
+    /*  padding: 6px;*/
+     /*   right:-10px;  */
+        display: none;
     } 
   
 .logo{
      width: 50%;
+  /*  background-color: red;*/
+    text-align:center;
+    margin-left: 20%
   
 }  
     .logo img{
